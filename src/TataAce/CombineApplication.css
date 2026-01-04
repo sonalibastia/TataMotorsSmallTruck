@@ -1,0 +1,54 @@
+.combine-page {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #cde1f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .vehicle-side {
+    flex: 3;
+    padding: 40px;
+  }
+  
+  .fuel-side {
+    flex: 1;
+    background-color: #1976d2;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  @media (max-width: 1024px) {
+  .combine-page {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .vehicle-side,
+  .fuel-side {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .fuel-side {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vehicle-side,
+  .fuel-side {
+    padding: 20px 15px;
+  }
+
+  .fuel-side {
+    font-size: 14px;
+  }
+}

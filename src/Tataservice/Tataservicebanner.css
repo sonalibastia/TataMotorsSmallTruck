@@ -1,0 +1,78 @@
+.services-hero {
+  width: 90%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-left: 100px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  margin-bottom: 60px;
+}
+.services-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+  z-index: 1;
+}
+
+.overlay-content {
+  max-width: 800px;
+  margin-left: 5%;
+  z-index: 2;
+}
+
+.overlay-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.overlay-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .overlay-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .overlay-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay-content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .overlay-content h1 {
+    font-size: 2rem;
+  }
+
+  .overlay-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .overlay-content p {
+    font-size: 0.9rem;
+  }
+}

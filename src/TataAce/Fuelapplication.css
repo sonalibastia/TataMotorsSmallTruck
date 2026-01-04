@@ -1,0 +1,90 @@
+.fuel-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .fuel-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .fuel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .fuel-icon-wrapper {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fuel-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .fuel-label {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+  .fuel-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .fuel-grid {
+    gap: 20px;
+  }
+
+  .fuel-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+  }
+
+  .fuel-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .fuel-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fuel-title {
+    font-size: 18px;
+  }
+
+  .fuel-icon-wrapper {
+    width: 45px;
+    height: 45px;
+    padding: 6px;
+  }
+
+  .fuel-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fuel-label {
+    font-size: 13px;
+  }
+}
