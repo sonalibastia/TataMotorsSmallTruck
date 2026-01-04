@@ -1,0 +1,155 @@
+/* .better-always-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px auto;
+  border: 8px solid #1e90ff;
+  background-color: white;
+}
+
+.video-section {
+  flex: 1 1 400px;
+  position: relative;
+}
+
+.video-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.play-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60px;
+}
+
+.play-button img {
+  width: 50px;
+  height: 50px;
+}
+
+.text-section {
+  flex: 1 1 400px;
+  background-color: #1e90ff;
+  color: white;
+  padding: 40px 20px;
+}
+
+.text-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 14px;
+  line-height: 1.6;
+} */
+
+
+
+#bgwhite{
+    height: 850px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+
+
+
+.better-always-container {
+    height: 460px;
+    width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(38, 148, 221, 0.822);
+  color: white;
+  padding: 40px 5%;
+  margin-left: 65px;
+  /* position: relative; */
+}
+
+
+.video-section {
+
+  position: relative;
+  flex: 1 1 500px;
+  max-width: 500px;
+  margin: 20px;
+  bottom: 180px; 
+}
+
+.video-image {
+  width: 100%;
+  /* border-radius: 10px; */
+  /* height: 450px; */
+  /* position: absolute; */
+  /* bottom: -50px; */
+  
+}
+
+.playbutton {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:rgba(38, 148, 221, 0.822);
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.text-section {
+  flex: 1 1 400px;
+  max-width: 600px;
+  margin: 20px;
+  padding-bottom: 150px;
+}
+
+.text-section h2 {
+  font-size: 37px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .better-always-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-section p {
+    font-size: 0.95rem;
+  }
+
+  .playbutton {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+

@@ -1,0 +1,110 @@
+.support-banner {
+  position: relative;
+  width: 90%;
+  height: 200px;
+  display: flex;
+ margin-left: 75px;
+  font-family: sans-serif;
+  overflow: hidden;
+  background-color: white;
+}
+
+
+.left-section {
+  width: 50%;
+  background-color: white;
+  padding: 30px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  z-index: 2;
+}
+
+.left-section h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #111;
+  font-weight: bolder;
+}
+
+.left-section p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.5;
+  
+  
+}
+
+
+.right-section {
+  width: 50%;
+  background: linear-gradient(to right, #0090e3, #0066cc);
+  color: white;
+  padding: 30px;
+  margin-left: -1px; 
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.top-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.phone-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+/* responsive part */
+@media (max-width: 768px) {
+  .support-banner {
+    flex-direction: column;
+    clip-path: none;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    flex: 1 1 100%;
+    clip-path: none;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .left-section h2 {
+    font-size: 24px;
+  }
+
+  .left-section p {
+    font-size: 16px;
+  }
+
+  .phone-number {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-section h2 {
+    font-size: 20px;
+  }
+
+  .left-section p {
+    font-size: 14px;
+  }
+
+  .top-text {
+    font-size: 10px;
+  }
+
+  .phone-number {
+    font-size: 18px;
+  }
+}

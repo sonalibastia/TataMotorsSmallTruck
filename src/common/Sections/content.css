@@ -1,0 +1,327 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Outer container */
+#container {
+  height: 290vh;
+  width: 100%;
+  position: relative;
+}
+
+/* Colored boxes on top */
+#color-box {
+  height: 150px;
+  width: 130px;
+  border: 3px solid rgb(34, 96, 231);
+  background-color: rgb(34, 96, 231);
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+
+#black-clr-box {
+  height: 150px;
+  width: 50px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 120px;
+  border-bottom: 1px solid rgb(34, 96, 231);
+  border-top: 3px solid rgb(34, 96, 231);
+  border-right: 1px solid rgb(34, 96, 231);
+}
+
+/* Content border container */
+#cnt-border {
+  height: 240vh;
+  width: 90%;
+  margin-top: 150px;
+  margin-left: 100px;
+  border-left: 3px solid rgb(34, 96, 231);
+  border-top: 3px solid rgb(34, 96, 231);
+  border-bottom: 3px solid rgb(34, 96, 231);
+  justify-content: space-evenly;
+}
+
+/* Heading and paragraph styling */
+#heading-part {
+  width: 45%;
+  font-size: 40px;
+  margin-top: 140px;
+  font-family: url(../assets/fonts/UniNeuBold.ttf);
+  font-weight: bolder;
+}
+
+#content-part {
+  height: 64%;
+  width: 45%;
+  font-size: 16px;
+  font-family: url(../assets/fonts/UniNeuLight.ttf);
+  font-weight: 400;
+  margin-top: 150px;
+}
+
+#top-part {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Slider container */
+.slider-container {
+  max-width: 1700px;
+  height: 550px;
+  margin-left: 150px;
+  margin-top: 50px;
+  background: black;
+  /* border-radius: 10px; */
+  overflow: hidden;
+  text-align: center;
+  /* padding-bottom: 10px; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Scrollable slider row */
+.slider-scroll {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar */
+.slider-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Slide styling */
+.slide {
+  flex: 0 0 calc(100% / 3);
+  scroll-snap-align: start;
+  background-color: black;
+  /* border-radius: 10px; */
+  position: relative;
+  margin-right: 20px; /* optional spacing */
+}
+
+/* Slide image */
+.slide-image {
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Slide text block */
+.slide-text {
+  width: 70%;
+  height: 150px;
+  background-color: #007BFF;
+  padding: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 70px;
+}
+
+/* Decorative boxes inside slide */
+.color-box {
+  height: 110px;
+  width: 90px;
+  background-color: #007BFF;
+  position: absolute;
+  top: 200px;
+  left: 0;
+}
+
+.black-c-box {
+  height: 70px;
+  width: 30px;
+  background-color: black;
+  position: absolute;
+  top: 239px;
+  left: 40px;
+}
+
+/* Bottom slider section */
+.slider-progress-bottom {
+  display: flex;
+  gap: 30px;
+  margin-left: 60px;
+  /* margin-bottom:30px ; */
+}
+
+/* Control buttons */
+.slider-controls {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
+
+.slider-controls button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.slider-controls button:hover {
+  background-color: #0056b3;
+}
+
+/* Progress bar */
+.custom-progress-bar {
+  height: 2px;
+  background-color: #333;
+  margin: 10px 0 20px;
+  width: 50%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-indicator {
+  height: 100%;
+  background-color: #00d1ff;
+  transition: width 0.6s ease-in-out;
+}
+
+/* CTA Buttons at the bottom */
+.end-button {
+  height: 50px;
+  width: 700px;
+  margin-left: 300px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  /* margin-bottom: 70px */
+}
+
+.end-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+
+/* responsive part */
+@media (max-width: 1024px) {
+  #top-part {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #heading-part,
+  #content-part {
+    width: 90%;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #cnt-border {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .slider-container {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+
+  .slide-text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .color-box {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 10px auto;
+  }
+
+  .black-c-box {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 10px auto;
+  }
+
+  .slider-controls {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  .end-button {
+    flex-direction: column;
+    width: 90%;
+    margin: 40px auto;
+    gap: 20px;
+  }
+
+  .end-button a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #heading-part {
+    font-size: 22px;
+  }
+
+  #content-part {
+    font-size: 14px;
+  }
+
+  .slide-text {
+    font-size: 16px;
+  }
+
+  .slider-controls button {
+    padding: 8px 14px;
+    font-size: 16px;
+  }
+
+  .custom-progress-bar {
+    width: 90%;
+  }
+
+  .slider-container {
+    height: auto;
+    padding-bottom: 20px;
+  }
+}

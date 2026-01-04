@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: UniNeuRegular;
+  src: url("./assets/fonts/UniNeuRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: UniNeuBold;
+  src: url("./assets/fonts/UniNeuBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: UniNeuBlack;
+  src: url("./assets/fonts/UniNeuBlack.ttf") format("truetype");
+}
+@font-face {
+  font-family: UniNeuBook;
+  src: url("./assets/fonts/UniNeuBook.ttf") format("truetype");
+}
+@font-face {
+  font-family: UniNeuHeavy;
+  src: url("./assets/fonts/UniNeuHeavy.ttf") format("truetype");
+}
+@font-face {
+  font-family: UniNeuLight;
+  src: url("./assets//fonts/UniNeuLight.ttf") format("truetype");
+}
+
+/* Custom CSS Variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: UniNeuRegular;
+  --font-mono: monospace;
+}
+
+/* Dark mode override */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Global styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Utility: Arrow-shaped element */
+.clip-path-arrow {
+  clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%);
+}

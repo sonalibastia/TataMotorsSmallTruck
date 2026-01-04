@@ -1,0 +1,67 @@
+.spec-container {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.spec-section {
+  margin-bottom: 40px;
+  border: 1px solid #333;
+  width: 100%;
+
+  
+}
+
+.spec-title {
+  background-color: #cbe0fc;
+  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: black;
+  padding-left: 50px;
+}
+
+.spec-table {
+  background-color: #333;
+  color: white;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-top: 1px solid  #444;
+  flex-wrap: wrap;
+}
+
+.spec-label {
+  flex: 1;
+  font-weight: 500;
+}
+
+.spec-value {
+  flex: 1;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .spec-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .spec-value {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+.spec-row:nth-child(odd) {
+  background-color: #444; /* Dark Gray */
+}
+
+.spec-row:nth-child(even) {
+  background-color: #666; /* Light Gray */
+}

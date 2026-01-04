@@ -1,0 +1,43 @@
+#mainDiv{
+    height: 150vh;
+    width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2px;
+   background-color: white;
+   
+}
+#item1{
+    height: 400px;
+    width: 500px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* padding-top: 10px; */
+}
+#item1 span img{
+    height: 300px;
+    width: 100%;
+    padding-top: 10px 20px;
+}
+#item1 span,p{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-left: 40px;
+
+}
+#item1 span button{
+    height: 40px;
+    width: 360px;
+    border: 1px solid rgb(42, 41, 41);
+    margin-top: 18px;
+    margin-left: 35px;
+}
+
+#button:hover{
+  background-color: blue;
+  color: white;
+}

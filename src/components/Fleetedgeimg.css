@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#image{
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-bottom: 2px solid rgb(9, 60, 170);
+
+}
+#image-top{
+    height: 400px;
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: palevioletred; */
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+.imgbox{
+    height: 230px;
+    width: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    /* background-color: rebeccapurple; */
+}
+#image-bottom{
+    
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* #image-bottom:hover{
+   background-color: white;
+    color: #085bb4;
+} */
+#image-bottom button{
+    font-size: 20px;
+  height: 50px;
+  width: 200px;
+  background-color: #085bb4;
+  color: white;
+  border: none;
+}
+#image-bottom button a{
+    height: 50px;
+    width: 250px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+#image-bottom button>a:hover{
+    background-color: white;
+    color: #085bb4;
+    
+}
+#image-bottom button:hover{
+    background-color: white;
+    color: #085bb4;
+    /* color: black; */
+    
+}
+
+
+/* ------------------- */
+/* Media Queries */
+/* ------------------- */
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+  #image-top {
+    gap: 15px;
+  }
+
+  .imgbox {
+    width: 45%;
+    height: auto;
+  }
+
+  #image-bottom button {
+    width: 180px;
+    font-size: 18px;
+  }
+}
+
+/* Mobiles (below 767px) */
+@media (max-width: 767px) {
+  .imgbox {
+    width: 90%;
+    height: auto;
+  }
+
+  #image-bottom button {
+    width: 160px;
+    font-size: 16px;
+  }
+
+  #image {
+    padding: 15px 5px;
+  }
+
+  #image-top {
+    flex-direction: column;
+  }
+}

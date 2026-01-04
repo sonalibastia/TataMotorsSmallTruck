@@ -1,0 +1,39 @@
+#mainDiv{
+    height: 130vh;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background-color: white;
+    /* background-color: green; */
+}
+#submainDiv{
+    height: 70vh;
+    width: 80%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+#submainDiv h1{
+    font-size: 40px;
+    color: black;
+    /* background-color: chartreuse; */
+    text-align: center;
+   font-family: sans-serif;
+   font-weight: bolder;
+   margin-top: 30px;
+}
+.gridDiv{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 250px;
+    gap: 9px;
+    justify-content: center;
+   padding-top: 100px;
+
+}
+.gridDiv span{
+    background-color: red;
+}

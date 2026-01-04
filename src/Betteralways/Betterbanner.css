@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#betterbag{
+    height: 550px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+#betterborder{
+    height: 450px;
+    width: 90%;
+    border-top: 1px solid white;
+     border-left: 1px solid white;
+    /* background-color: pink; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+   margin-left: 130px;
+   
+}
